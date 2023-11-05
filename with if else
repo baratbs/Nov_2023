@@ -1,0 +1,15 @@
+#include<stdio.h>
+char odd(char number);
+char number,result;
+int main(){
+    printf("GIve me a number: ");
+    scanf("%d",&number);
+    result=odd(number);
+    printf("%d",result);
+}
+
+char odd(char number){
+    //char result;
+    result=number+((number%2-1)-5);
+    return result;
+}
